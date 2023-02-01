@@ -7,7 +7,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-alpha9'
+        classpath 'com.android.tools.build:gradle:4.2.2'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         // NOTE: Do not place your application dependencies here; they belong
@@ -21,4 +21,9 @@ allprojects {
         mavenCentral()
         google()
     }
+}
+
+tasks.named('wrapper') {
+    distributionType = Wrapper.DistributionType.BIN
+    gradleVersion = "7.6"
 }
