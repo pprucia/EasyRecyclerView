@@ -37,7 +37,7 @@ public class PersonViewHolder extends BaseViewHolder<Person> {
         Glide.with(getContext())
                 .load(person.getFace())
                 .placeholder(R.drawable.default_image)
-                .bitmapTransform(new CropCircleTransformation(getContext()))
+                .transform(new CropCircleTransformation())
                 .into(mImg_face);
     }
 }

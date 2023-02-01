@@ -2,8 +2,9 @@ package com.jude.dome.multistyle;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.jude.dome.DataProvider;
 import com.jude.dome.R;
